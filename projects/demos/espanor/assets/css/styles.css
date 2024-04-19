@@ -1,0 +1,5 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--bs-navbar-active-color);
+  border-bottom: solid 1px var(--bs-primary);
+}
+
