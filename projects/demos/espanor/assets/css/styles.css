@@ -3,3 +3,116 @@
   border-bottom: solid 1px var(--bs-primary);
 }
 
+.about .tab-class .nav .nav-item a.active, .about .tab-class .nav .nav-item a.active span {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+
+/* ** Service Start ** */
+
+.service .service-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.service .service-item .service-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: end;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.service .service-item .service-link:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.service .service-item .service-link a {
+  color: var(--bs-white);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.service .service-item img {
+  transition: 0.5s;
+}
+
+.service .service-item:hover img {
+  transform: scale(1.1);
+}
+
+.service .service-item .service-link:hover a:hover {
+  color: var(--bs-primary);
+}
+
+/* ** Service End ** */
+
+/* ** Donation Start ** */
+
+.donation .donation-item {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.donation .donation-item::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.donation .donation-item .donation-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  justify-content: end;
+  bottom: -60px;
+  left: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.donation .donation-item .donation-content a {
+  text-decoration: none;
+}
+
+.donation .donation-item .donation-content a:hover {
+  color: var(--bs-primary);
+}
+
+.donation .donation-item:hover .donation-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  justify-content: end;
+  bottom: 0px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.donation .donation-item .donation-btn {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.donation .donation-item:hover .donation-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ** Donation End ** */
+
