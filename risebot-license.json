@@ -1,0 +1,17 @@
+{
+  "app": "RiseBot",
+  "usuarios": {
+    "Mcolher": {
+      "ativo": true
+    },
+    "Wartur": {
+      "ativo": true
+    },
+    "Fjaime": {
+      "ativo": false
+    },
+    "Gmandio": {
+      "ativo": true
+    }
+  }
+}
