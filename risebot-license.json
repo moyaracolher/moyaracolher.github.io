@@ -2,16 +2,16 @@
   "app": "RiseBot",
   "usuarios": {
     "Mcolher": {
-      "ativo": true
+      "ativo": false
     },
     "Wartur": {
-      "ativo": true
+      "ativo": false
     },
     "Fjaime": {
       "ativo": false
     },
     "Gmandio": {
-      "ativo": true
+      "ativo": false
     }
   }
 }
