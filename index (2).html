@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moyara Colher | Oficial de Monitoria, Avaliação e Aprendizagem (MEAL)</title>
+<meta name="description" content="Portefólio de Moyara Colher: oficial de Monitoria, Avaliação e Aprendizagem (MEAL), analista de dados e especialista em TI em Moçambique. Experiência com DHIS2, ODK, KoboToolBox, SAP e Google Earth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<style>
+  :root{
+    --verde:#0B5D45; --verde-escuro:#073D2E; --areia:#F3F6F4; --tinta:#16231F;
+    --amarelo:#F2B705; --cinza:#5B6B65;
+    --bs-body-font-family:'IBM Plex Sans',system-ui,sans-serif;
+    --bs-body-color:var(--tinta); --bs-body-bg:#fff;
+    --bs-link-color:var(--verde); --bs-link-hover-color:var(--verde-escuro);
+  }
+  body{line-height:1.65}
+  h1,h2,h3{letter-spacing:-.015em;font-weight:700}
+  .navbar{background:var(--verde-escuro)}
+  .navbar .nav-link{color:#d7e6df}
+  .navbar .nav-link:hover,.navbar .nav-link:focus{color:#fff}
+  .navbar-brand{color:#fff;font-weight:700}
+  .hero{background:var(--verde-escuro);color:#fff;padding:4.5rem 0 3.5rem}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+  .hero .lead{color:#cfe3da;max-width:38rem}
+  .btn-ouro{background:var(--amarelo);color:#1b1b1b;font-weight:600;border:0}
+  .btn-ouro:hover{background:#ffc928;color:#000}
+  .btn-linha{border:1px solid #6f9a8a;color:#fff}
+  .btn-linha:hover{background:#fff;color:var(--verde-escuro)}
+  /* Ficha de dados: o elemento central do hero */
+  .ficha{background:#0d4a38;border:1px solid #2c6b57;border-left:6px solid var(--amarelo);border-radius:.4rem;padding:1.25rem 1.5rem}
+  .ficha dt{font-weight:500;color:#9fc4b6;font-size:.85rem}
+  .ficha dd{margin:0 0 .8rem;font-weight:600}
+  .ficha dd:last-child{margin-bottom:0}
+  section{padding:3.5rem 0}
+  section.alt{background:var(--areia)}
+  .sec-titulo{margin-bottom:.4rem}
+  .sec-sub{color:var(--cinza);margin-bottom:1.5rem;max-width:42rem}
+  .caixa{background:#fff;border:1px solid #dbe5e0;border-radius:.4rem;padding:1rem}
+  table.dataTable thead th{background:var(--verde);color:#fff;border-bottom:0}
+  table.dataTable tbody td{vertical-align:top;font-size:.95rem}
+  table.dataTable td ul{margin:0;padding-left:1.1rem}
+  .etq{display:inline-block;padding:.15rem .55rem;border-radius:1rem;font-size:.78rem;font-weight:600;white-space:nowrap}
+  .etq-ma{background:#d8efe5;color:#064a36}
+  .etq-ti{background:#fdf0c4;color:#6a4b00}
+  .etq-fin{background:#e1e8f5;color:#243a66}
+  .etq-op{background:#ececec;color:#3a3a3a}
+  .filtro{max-width:16rem}
+  footer{background:var(--verde-escuro);color:#cfe3da;padding:2rem 0}
+  footer a{color:#fff}
+  :focus-visible{outline:3px solid var(--amarelo);outline-offset:2px}
+  html{scroll-behavior:smooth;scroll-padding-top:4rem}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#topo">Moyara Colher</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#meal">MEAL</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ferramentas">Ferramentas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competencias">Competências</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projectos">Projectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <h1>Moyara Colher</h1>
+        <p class="fs-4 fw-semibold mb-2">Oficial de Monitoria, Avaliação e Aprendizagem (MEAL) e Analista de Dados</p>
+        <p class="lead">Transformo dados de campo em informação fiável e em aprendizagem para programas de saúde e desenvolvimento comunitário. Formada em Tecnologias de Informação, com experiência em projectos USAID e domínio de ferramentas digitais como DHIS2, ODK, KoboToolBox, SAP e Google Earth.</p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <a class="btn btn-ouro btn-lg" href="#meal">Ver o meu perfil MEAL</a>
+          <a class="btn btn-linha btn-lg" href="https://www.linkedin.com/in/moyaracolher/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <dl class="ficha mb-0">
+          <dt>Função actual</dt><dd>Assistente de Dados, KUKUMBI (desde 09/2025)</dd>
+          <dt>Formação</dt><dd>Licenciatura em Tecnologias de Informação</dd>
+          <dt>Áreas de actuação</dt><dd>MEAL, qualidade de dados, sistemas e web</dd>
+          <dt>Ferramentas</dt><dd>DHIS2, ODK, KoboToolBox, SAP, Google Earth</dd>
+          <dt>Idiomas</dt><dd>Português (fluente) e Inglês (profissional)</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="sobre">
+  <div class="container">
+    <h2 class="sec-titulo">Sobre mim</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <p>Tenho mais de oito anos de percurso entre a Monitoria e Avaliação, a gestão de informação e a tecnologia. Entre 2017 e 2020 trabalhei na KUKUMBI na implementação de projectos USAID (FCC e DREAMS), avaliação da qualidade de dados e elaboração de relatórios periódicos.</p>
+        <p>Depois, no Conselho Cristão de Moçambique, fui Oficial dos projectos ECHO (ABT/USAID) e MRF Pilar 2 (PNUD), com M&amp;A, gestão de casos, relatórios e apoio à gestão de fundos. Também desenvolvi soluções digitais para organizações, de websites com painel administrativo a um ERP personalizado.</p>
+        <p>Trabalho com ferramentas digitais de recolha, gestão e análise de dados, entre elas DHIS2, ODK, KoboToolBox, SAP e Google Earth. Isto permite-me ligar o trabalho de campo aos sistemas de reporte e apoiar as equipas com soluções práticas.</p>
+        <p class="mb-0">O meu objectivo é contribuir para a melhoria da qualidade de dados, a implementação de sistemas de MEAL e a aprendizagem das equipas e dos parceiros comunitários.</p>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="caixa">
+          <h3 class="h6">Pontos fortes</h3>
+          <ul class="mb-0">
+            <li>Comunicação e prestação de contas</li>
+            <li>Trabalho em equipa</li>
+            <li>Pensamento analítico</li>
+            <li>Liderança e capacitação</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="meal" class="alt">
+  <div class="container">
+    <h2 class="sec-titulo">Monitoria, Avaliação e Aprendizagem</h2>
+    <p class="sec-sub">Como o meu percurso cobre cada componente do ciclo MEAL.</p>
+    <div class="caixa">
+      <table id="tabMeal" class="table table-striped w-100">
+        <thead><tr><th>Componente</th><th>O que faço</th><th>Onde o fiz</th></tr></thead>
+        <tbody>
+          <tr><td>Monitoria</td><td>Planeamento e monitoria de projectos, gestão de dados e do sistema de informação do projecto</td><td>KUKUMBI (FCC e DREAMS); Conselho Cristão de Moçambique (ECHO)</td></tr>
+          <tr><td>Avaliação e qualidade de dados</td><td>DQA, validação de dados nas Unidades Sanitárias, validação e limpeza de bases de dados</td><td>KUKUMBI; ECHO</td></tr>
+          <tr><td>Prestação de contas</td><td>Relatórios semanais, mensais, trimestrais e anuais, coordenação com parceiros, respostas a auditorias</td><td>KUKUMBI; ECHO; MRF Pilar 2 (BDO e KPMG)</td></tr>
+          <tr><td>Aprendizagem</td><td>Formação de oficiais de campo, parceiros e intervenientes comunitários; capacitação de equipas de recolha e de supervisores</td><td>KUKUMBI (2017–2020 e função actual)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <h2 class="sec-titulo">Experiência profissional</h2>
+    <p class="sec-sub">Pesquise por organização, função ou tarefa, ou filtre por área. Clique nos cabeçalhos para ordenar.</p>
+    <div class="caixa">
+      <div class="mb-3 filtro">
+        <label for="filtroArea" class="form-label fw-semibold">Área</label>
+        <select id="filtroArea" class="form-select">
+          <option value="">Todas as áreas</option>
+          <option>M&amp;A</option>
+          <option>TI</option>
+          <option>Finanças</option>
+          <option>Operações</option>
+        </select>
+      </div>
+      <table id="tabExp" class="table table-striped table-hover w-100">
+        <thead>
+          <tr><th>Período</th><th>Organização</th><th>Função</th><th>Área</th><th>Responsabilidades</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-order="202509">09/2025 – Presente</td><td>KUKUMBI (ODR)</td><td>Assistente de Dados</td><td><span class="etq etq-ma">M&amp;A</span></td><td><ul><li>Revisão e qualificação de formulários e inserção precisa de registos</li><li>Apoio à equipa de M&amp;A na validação e limpeza de bases de dados</li><li>Redução de erros e campos em branco com capacitação básica das equipas de recolha</li><li>Relatórios mensais, trimestrais e ad-hoc; gestão do arquivo físico e digital</li></ul></td></tr>
+          <tr><td data-order="202507">07/2025 – 09/2025</td><td>ZAP a minha TV MZ, Maputo</td><td>Assistente de BackOffice</td><td><span class="etq etq-op">Operações</span></td><td><ul><li>Gestão de relacionamento com o cliente (CRM) e escuta activa</li><li>Gestão de prioridades e do fluxo de trabalho</li><li>Tratamento de ocorrências técnicas e activação de equipamentos</li><li>Suporte ao Call Center e à equipa comercial</li></ul></td></tr>
+          <tr><td data-order="202406">06/2024 – 01/2025</td><td>Nacala Logistics (CLN)</td><td>Estagiário Superior de Manutenção Portuária (SAP)</td><td><span class="etq etq-op">Operações</span></td><td><ul><li>Planeamento de manutenção e aprovisionamento de ferramentas e materiais no SAP</li><li>Programação das manutenções com a equipa de execução</li><li>Controlo de execução, com monitoria no campo e no sistema</li><li>Gestão e acompanhamento dos indicadores-chave da supervisão</li></ul></td></tr>
+          <tr><td data-order="202405">05/2024 – 12/2024</td><td>Conselho Cristão de Moçambique (freelance)</td><td>Desenvolvedor Web</td><td><span class="etq etq-ti">TI</span></td><td><ul><li>Website com painel administrativo cliente-servidor</li><li>Desenho e implementação da arquitectura, com foco em robustez e segurança</li><li>Consultorias de TI em 2024: domínios, hospedagem, emails e backups em cloud</li></ul></td></tr>
+          <tr><td data-order="202302">02/2023 – 02/2024</td><td>MBachir &amp; Advogados (freelance)</td><td>Desenvolvedor de Sistemas</td><td><span class="etq etq-ti">TI</span></td><td><ul><li>Desenvolvimento do sistema de gestão de processos (ERP personalizado)</li><li>Excel VBA e migração para sistemas escaláveis</li><li>Boas práticas de robustez, segurança e escalabilidade</li></ul></td></tr>
+          <tr><td data-order="202301">01/2023</td><td>Conselho Cristão de Moçambique (freelance)</td><td>Consultor Informático</td><td><span class="etq etq-ti">TI</span></td><td><ul><li>Desenho, instalação e configuração de redes</li><li>Administração de hosts e seus recursos</li><li>Diagnóstico e manutenção de equipamentos e sistemas operativos</li></ul></td></tr>
+          <tr><td data-order="202210">10/2022 – 12/2022</td><td>MBachir &amp; Advogados (freelance)</td><td>Consultor Informático</td><td><span class="etq etq-ti">TI</span></td><td><ul><li>Análise da plataforma de lançamento e administração de processos</li><li>Estratégias e soluções de gestão de processos, e sua implementação</li></ul></td></tr>
+          <tr><td data-order="202012">12/2020 – 05/2022</td><td>Conselho Cristão de Moçambique</td><td>Oficial do Projecto (ECHO, ABT/USAID)</td><td><span class="etq etq-ma">M&amp;A</span></td><td><ul><li>Planeamento, coordenação, implementação e monitoria de actividades com ABT, Governo, USAID e comunidades</li><li>Relatórios mensais, trimestrais e anuais e discussões de dados</li><li>Avaliação e validação de dados nas Unidades Sanitárias, com assistência técnica ao pessoal comunitário</li><li>Gestão de casos, mobilização comunitária e ligação com o governo local</li></ul></td></tr>
+          <tr><td data-order="202010">10/2020 – 06/2022</td><td>Conselho Cristão de Moçambique, Beira</td><td>Oficial do Projecto (MRF Pilar 2, PNUD)</td><td><span class="etq etq-fin">Finanças</span></td><td><ul><li>Projecto de 40 residências para famílias afectadas pelo ciclone IDAI</li><li>Relatórios mensais e anuais (FACE)</li><li>Resposta a auditorias BDO (2021) e KPMG (2021 e 2022)</li><li>Apoio à administração e gestão de fundos do projecto</li></ul></td></tr>
+          <tr><td data-order="201712">12/2017 – 05/2020</td><td>KUKUMBI</td><td>Oficial de Monitoria e Avaliação</td><td><span class="etq etq-ma">M&amp;A</span></td><td><ul><li>Projectos FCC e DREAMS (Bantwana/WEI, fundos USAID)</li><li>Formação de oficiais de campo, parceiros e intervenientes comunitários</li><li>Monitoria, planos e relatórios semanais, mensais, trimestrais e anuais</li><li>Gestão do sistema de informação e dos dados físicos e digitais</li><li>Avaliação da qualidade de dados (DQA) e coordenação com parceiros</li><li>Visitas domiciliares e apoio à gestão de casos</li></ul></td></tr>
+          <tr><td data-order="201711">11/2017 – 12/2017</td><td>Portos e Caminhos de Ferro de Moçambique, Nampula</td><td>Técnico Informático</td><td><span class="etq etq-ti">TI</span></td><td><ul><li>Suporte a utilizadores, manutenção de sistemas, redes e segurança da informação</li><li>Formação de utilizadores e documentação técnica</li></ul></td></tr>
+          <tr><td data-order="201710">10/2017 – 12/2017</td><td>Grupo Moçambicano da Dívida</td><td>Activista Inquiridor</td><td><span class="etq etq-ma">M&amp;A</span></td><td><ul><li>Avaliação da aplicação de fundos do Plano Económico e Social do Orçamento Distrital de Mecuburi</li><li>Análise documental</li></ul></td></tr>
+          <tr><td data-order="201707">07/2017 – 08/2017</td><td>AMOR, Nampula</td><td>Pesquisador de Campo e Digitador de Dados</td><td><span class="etq etq-ma">M&amp;A</span></td><td><ul><li>Caracterização de resíduos sólidos em áreas da cidade de Nampula</li><li>Recolha, digitação e análise de dados</li></ul></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="ferramentas" class="alt">
+  <div class="container">
+    <h2 class="sec-titulo">Ferramentas digitais</h2>
+    <p class="sec-sub">Plataformas que uso para recolher, gerir, analisar e reportar dados.</p>
+    <div class="caixa">
+      <table id="tabFerr" class="table table-striped w-100">
+        <thead><tr><th>Ferramenta</th><th>Tipo</th><th>Utilidade em MEAL</th></tr></thead>
+        <tbody>
+          <tr><td>DHIS2</td><td>Sistema de informação de saúde</td><td>Gestão, análise e reporte de indicadores</td></tr>
+          <tr><td>ODK</td><td>Recolha de dados móvel</td><td>Formulários digitais para trabalho de campo</td></tr>
+          <tr><td>KoboToolBox</td><td>Recolha de dados móvel</td><td>Inquéritos e formulários digitais com recolha offline</td></tr>
+          <tr><td>SAP</td><td>Sistema de gestão (ERP)</td><td>Planeamento e controlo de processos (SAP SANA na Nacala Logistics)</td></tr>
+          <tr><td>Google Earth e Google Maps</td><td>Visualização geográfica</td><td>Localização e visualização de áreas de intervenção (usados no Conselho Cristão de Moçambique)</td></tr>
+          <tr><td>Excel VBA, Python, SQL</td><td>Análise e automação</td><td>Tratamento de dados, automação e bases de dados</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="competencias">
+  <div class="container">
+    <h2 class="sec-titulo">Competências técnicas</h2>
+    <p class="sec-sub">Cada competência com o contexto onde foi aplicada.</p>
+    <div class="caixa">
+      <table id="tabComp" class="table table-striped w-100">
+        <thead><tr><th>Competência</th><th>Tecnologias e métodos</th><th>Aplicada em</th></tr></thead>
+        <tbody>
+          <tr><td>Monitoria e Avaliação baseada em resultados</td><td>MEAL, planos e relatórios</td><td>KUKUMBI; Conselho Cristão de Moçambique (ECHO)</td></tr>
+          <tr><td>Avaliação da qualidade de dados</td><td>Validação e limpeza de bases de dados, DQA</td><td>KUKUMBI</td></tr>
+          <tr><td>Recolha, digitação e análise de dados</td><td>Formulários e bases de dados</td><td>AMOR, Grupo Moçambicano da Dívida, KUKUMBI</td></tr>
+          <tr><td>Gestão de casos e mobilização comunitária</td><td>Visitas domiciliares, apoio a intervenientes comunitários</td><td>KUKUMBI; ECHO</td></tr>
+          <tr><td>Treinamentos e capacitação</td><td>Formação de oficiais de campo, parceiros e supervisores</td><td>KUKUMBI</td></tr>
+          <tr><td>Gestão de recursos e prestação de contas</td><td>FACE, auditorias, gestão de fundos</td><td>MRF Pilar 2 (PNUD)</td></tr>
+          <tr><td>Mapas e análise geoespacial</td><td>Google Earth, Google Maps</td><td>Conselho Cristão de Moçambique</td></tr>
+          <tr><td>Desenvolvimento web e sistemas</td><td>PHP, Python, SQL, programação orientada a objectos, integração de sistemas</td><td>Conselho Cristão de Moçambique; MBachir &amp; Advogados</td></tr>
+          <tr><td>Desenho e administração de bases de dados</td><td>SQL</td><td>Conselho Cristão de Moçambique; MBachir &amp; Advogados</td></tr>
+          <tr><td>Automação de processos</td><td>Excel VBA, Python</td><td>MBachir &amp; Advogados</td></tr>
+          <tr><td>Redes, sistemas e suporte técnico</td><td>Administração e manutenção de redes e sistemas</td><td>Conselho Cristão de Moçambique; PCFM</td></tr>
+          <tr><td>Domínios e hospedagem web</td><td>Domínios, hospedagem, backups em cloud</td><td>Consultorias de TI (2024)</td></tr>
+          <tr><td>Gestão de projectos, tempo e processos</td><td>Planeamento e melhoria de processos</td><td>Nacala Logistics</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="projectos" class="alt">
+  <div class="container">
+    <h2 class="sec-titulo">Projectos e consultorias em TI (2024)</h2>
+    <p class="sec-sub">Serviços prestados a empresas e organizações.</p>
+    <div class="caixa">
+      <table id="tabProj" class="table table-striped w-100">
+        <thead><tr><th>Serviço</th><th>Descrição</th></tr></thead>
+        <tbody>
+          <tr><td>Domínios e hospedagem</td><td>Gestão de domínios e serviços de hospedagem</td></tr>
+          <tr><td>Emails corporativos</td><td>Configuração e administração</td></tr>
+          <tr><td>Websites institucionais</td><td>Desenvolvimento para organizações</td></tr>
+          <tr><td>Dados e backups</td><td>Recuperação de dados e backups em cloud</td></tr>
+          <tr><td>Soluções digitais</td><td>Implementação de soluções digitais para empresas</td></tr>
+          <tr><td>Infraestrutura</td><td>Gestão de infraestrutura informática</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="container">
+    <h2 class="sec-titulo">Formação e idiomas</h2>
+    <div class="row g-4 mt-1">
+      <div class="col-md-6">
+        <div class="caixa h-100">
+          <table id="tabForm" class="table w-100">
+            <thead><tr><th>Ano</th><th>Curso</th><th>Instituição</th></tr></thead>
+            <tbody>
+              <tr><td>2018</td><td>Licenciatura em Tecnologias de Informação</td><td>Universidade Católica de Moçambique</td></tr>
+              <tr><td>2010</td><td>Curso Técnico Básico de Contabilidade</td><td>Instituto Industrial 3 de Fevereiro, Nampula</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="caixa h-100">
+          <table id="tabIdi" class="table w-100">
+            <thead><tr><th>Idioma</th><th>Nível</th></tr></thead>
+            <tbody>
+              <tr><td>Português</td><td>Fluente</td></tr>
+              <tr><td>Inglês</td><td>Profissional</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="alt">
+  <div class="container">
+    <h2 class="sec-titulo">Contacto</h2>
+    <p class="sec-sub">Disponível para entrevistas e novas oportunidades em Monitoria e Avaliação, análise de dados e TI. Referências disponíveis a pedido.</p>
+    <div class="d-flex flex-wrap gap-2">
+      <a class="btn btn-success btn-lg" href="mailto:moyaracolher@gmail.com">moyaracolher@gmail.com</a>
+      <a class="btn btn-outline-success btn-lg" href="tel:+258870095950">(+258) 870 095 950</a>
+      <a class="btn btn-outline-success btn-lg" href="https://www.linkedin.com/in/moyaracolher/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="mt-3 text-secondary mb-0">Namacurra, Zambézia, Moçambique</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>&copy; <span id="ano"></span> Moyara Colher</span>
+    <span><a href="https://www.linkedin.com/in/moyaracolher/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="#topo">Voltar ao topo</a></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+<script>
+  // O jQuery é apenas a dependência exigida pelo DataTables.
+  const pt = {
+    search: 'Pesquisar:',
+    lengthMenu: 'Mostrar _MENU_ registos',
+    info: 'A mostrar _START_ a _END_ de _TOTAL_ registos',
+    infoEmpty: 'Sem registos',
+    infoFiltered: '(filtrado de _MAX_ registos)',
+    zeroRecords: 'Nenhum resultado encontrado',
+    paginate: { first: 'Primeira', last: 'Última', next: 'Seguinte', previous: 'Anterior' }
+  };
+  $(function () {
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    const exp = new DataTable('#tabExp', {
+      language: pt, scrollX: true, pageLength: 5, lengthMenu: [5, 10, 25],
+      order: [[0, 'desc']],
+      columnDefs: [{ orderable: false, targets: 4 }]
+    });
+    $('#filtroArea').on('change', function () {
+      const v = this.value;
+      exp.column(3).search(v ? v : '', false, true).draw();
+    });
+
+    ['#tabComp', '#tabProj'].forEach(id => new DataTable(id, { language: pt, scrollX: true, pageLength: 10, lengthChange: false }));
+    ['#tabMeal', '#tabFerr', '#tabForm', '#tabIdi'].forEach(id => new DataTable(id, { language: pt, paging: false, searching: false, info: false, ordering: false, scrollX: true }));
+  });
+</script>
+</body>
+</html>
